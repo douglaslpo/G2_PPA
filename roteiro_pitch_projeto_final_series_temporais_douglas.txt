@@ -1,0 +1,31 @@
+ROTEIRO DE PITCH — PROJETO FINAL DE SÉRIES TEMPORAIS
+
+Tema:
+Previsão mensal de passageiros aéreos usando a série Air Passengers.
+
+1. Problema escolhido
+O objetivo do projeto é aplicar um pipeline completo de séries temporais para analisar e prever o número mensal de passageiros aéreos.
+
+2. Justificativa da base
+A série Air Passengers foi escolhida porque apresenta tendência de crescimento, sazonalidade anual clara e amplitude sazonal crescente, sendo adequada para análise, decomposição e forecasting.
+
+3. Análise exploratória
+Na EDA, observamos crescimento ao longo do tempo, meses com comportamento recorrente e distribuição compatível com uma série que aumenta de nível ao longo dos anos.
+
+4. Decomposição
+Foi usada decomposição multiplicativa com período 12, pois a série é mensal e a sazonalidade cresce junto com o nível da série.
+
+5. Estacionariedade
+O teste ADF na série original indica que ela provavelmente não é estacionária. Após log e diferenciação sazonal, a série fica mais adequada para análise estacionária.
+
+6. Modelos avaliados
+Foram comparados três modelos: baseline sazonal, Holt-Winters multiplicativo e XGBoost com defasagens temporais.
+
+7. Métricas
+A avaliação foi feita com MAE, RMSE e MAPE. O melhor modelo é o que apresenta menor erro, especialmente menor MAPE.
+
+8. Conclusão
+A série possui tendência, sazonalidade e alguns pontos atípicos. O projeto mostra que modelos precisam ser comparados contra um baseline simples para justificar sua escolha.
+
+9. Limitações
+A base é pequena, univariada e histórica. O uso em produção exigiria dados mais recentes e variáveis externas.

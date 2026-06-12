@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+.venv/
+env/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Dados e artefatos locais
+*.csv
+*.xlsx
+*.pkl
+*.h5
+outputs/
+figures/
+
+# IDE / SO
+.idea/
+.vscode/
+*.swp
+Thumbs.db
+.DS_Store
